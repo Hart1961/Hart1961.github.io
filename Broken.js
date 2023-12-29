@@ -17,10 +17,11 @@ window.addEventListener('load', function(){
 	});
  **/
     isDoctorControlInstance.on('value-change', function() {
-		s = isDoctorControlInstance.getValue();
-		if (s.indexOf("doctor") !== -1) {
-			targetControlInstance.setValue( sourceControlInstance.getValue() );
-		}
+		targetControlInstance.setValue( sourceControlInstance.getValue() );
+		//s = isDoctorControlInstance.getValue();
+		//if (s.indexOf("doctor") !== -1) {
+		//	targetControlInstance.setValue( sourceControlInstance.getValue() );
+		//}
 	});
 	
 	targetControlInstance.setValue( sourceControlInstance.getValue() );
