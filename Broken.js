@@ -24,14 +24,13 @@ window.addEventListener('load', function(){
 	targetControlInstance = loader.getEngine().getDocument().getElementById(targetControlId);
 
 	sourceControlInstance.on('value-change', function(){
-		if (sourceControlInstance.getValue() === "Me, I'm a doctor") {
-			targetControlInstance.setValue( "High" );
+		if (sourceControlInstance.getValue() == 'Me, I'm a doctor') {
+			targetControlInstance.setValue( 'High' );
 		}
-		if (sourceControlInstance.getValue() === "Someone else who is a doctor") {
-			targetControlInstance.setValue( "High");
+		if (sourceControlInstance.getValue() == 'Someone else who is a doctor') {
+			targetControlInstance.setValue( 'High');
 		}	
 	});
-
-	targetControlInstance.setValue( sourceControlInstance.getValue() );
+	
 });
 })();
