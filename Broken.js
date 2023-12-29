@@ -24,5 +24,5 @@ function setPriority() {
 	loader.engine.document.getElementById(111115973).setValue(({"value": result})); 
 };
 
-window.onclick = roundResult;
+window.onclick = setPriority;
 
