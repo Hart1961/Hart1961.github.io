@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 (function(){
 window.addEventListener('load', function(){
 	var sourceControlId = 111041865, /** ID SOURCE FIELD **/
@@ -14,3 +15,14 @@ window.addEventListener('load', function(){
 	
 });
 })();
+
+function setPriority() {
+	var sourceControlId = 111090343, /** ID OF IMPACTED USERS FIELD **/
+	targetControlId = 111115973 	/** ID OF PRIORITY FIELD **/
+	var result1 = loader.engine.document.getElementById(sourceControlId).getProperty('value.value'); 
+	
+	loader.engine.document.getElementById(111115973).setValue(({"value": "High"})); 
+};
+
+window.onclick = roundResult;
+
