@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 (function(){
 window.addEventListener('load', function(){
 	var sourceControlId = 111041865, /** ID SOURCE FIELD **/
@@ -21,8 +20,8 @@ function setPriority() {
 	targetControlId = 111115973 	/** ID OF PRIORITY FIELD **/
 	var result1 = loader.engine.document.getElementById(sourceControlId).getProperty('value.value'); 
 	
-	loader.engine.document.getElementById(111115973).setValue(({"value": result})); 
+	loader.engine.document.getElementById(111115973).setValue(({"value": result1})); 
 };
 
-window.onclick = setPriority;
+window.onchange = setPriority;
 
