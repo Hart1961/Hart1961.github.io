@@ -11,11 +11,11 @@ window.addEventListener('load', function(){
 	isDoctorControlInstance = loader.getEngine().getDocument().getElementById(isDoctorControlId);
 	impactControlInstance = loader.getEngine().getDocument().getElementById(impactControlId);
 	priorityControlInstance = loader.getEngine().getDocument().getElementById(priorityControlId);
-
+/**
 	sourceControlInstance.on('value-change', function(){
 		targetControlInstance.setValue( sourceControlInstance.getValue() );
 	});
- 
+ **/
     isDoctorControlInstance.on('value-change', function() {
 		s = isDoctorControlInstance.getValue();
 		if (s.indexOf("doctor") !== -1) {
