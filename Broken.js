@@ -14,7 +14,7 @@ window.addEventListener('load', function(){
 
 	sourceControlInstance.on('value-change', function(){
 		targetControlInstance.setValue( sourceControlInstance.getValue() );
-		priorityControlInstance.setValue("High");
+		priorityControlInstance.setValue(sourceControlInstance.getValue());
 	});
  
     isDoctorControlInstance.on('value-change', function() {
