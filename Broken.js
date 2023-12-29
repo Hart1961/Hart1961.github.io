@@ -14,13 +14,12 @@ window.addEventListener('load', function(){
 
 	sourceControlInstance.on('value-change', function(){
 		targetControlInstance.setValue( sourceControlInstance.getValue() );
-		priorityControlInstance.setValue(sourceControlInstance.getValue());
 	});
  
     isDoctorControlInstance.on('value-change', function() {
 		s = isDoctorControlInstance.getValue();
 		if (s.indexOf("doctor") !== -1) {
-			priorityControlInstance.setValue("High");
+			targetControlInstance.setValue( sourceControlInstance.getValue() );
 		}
 	});
 	
