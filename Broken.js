@@ -14,18 +14,13 @@ window.addEventListener('load', function(){
 	
 });
 })();
-(function(){
-window.addEventListener('load', function(){
-	var sourceControlId = 111115973, /** ID OF THE SENDER CONTROL **/
-	targetControlId = 111117248, /** ID OF THE RECEIVER CONTROL **/
 
-	sourceControlInstance = loader.getEngine().getDocument().getElementById(sourceControlId),
-	targetControlInstance = loader.getEngine().getDocument().getElementById(targetControlId);
+function setPriority() {
+	var sourceControlId = 111090343, /** ID OF IMPACTED USERS FIELD **/
+	targetControlId = 111115973 	/** ID OF PRIORITY FIELD **/
+	var result1 = loader.engine.document.getElementById(sourceControlId).getProperty('value.value'); 
+	
+	loader.engine.document.getElementById(111115973).setValue(({"value": "High"})); 
+};
 
-	sourceControlInstance.on('value-change', function(){
-		targetControlInstance.setValue( sourceControlInstance.getValue() );
-	});
-
-	targetControlInstance.setValue( sourceControlInstance.getValue() );
-});
-})();
+window.onclick = roundResult;
