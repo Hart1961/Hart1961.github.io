@@ -21,7 +21,7 @@ function setPriority() {
 	targetControlId = 111115973 	/** ID OF PRIORITY FIELD **/
 	var result1 = loader.engine.document.getElementById(sourceControlId).getProperty('value.value'); 
 	
-	loader.engine.document.getElementById(111115973).setValue(({"value": "High"})); 
+	loader.engine.document.getElementById(111115973).setValue(({"value": result})); 
 };
 
 window.onclick = roundResult;
