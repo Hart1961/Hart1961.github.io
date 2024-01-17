@@ -4,16 +4,16 @@ window.addEventListener('load', function(){
 	targetControlId = 111435706; /** ID OF Date to route results **/
 	var d = new Date();
 	
-	window.alert("Call 5");
+	window.alert("Call 6");
 	window.alert(d);
 
 	sourceControlInstance = loader.getEngine().getDocument().getElementById(sourceControlId);
 	targetControlInstance = loader.getEngine().getDocument().getElementById(targetControlId);
 
 	sourceControlInstance.on('value-change', function(){
-		window.alert(d.getValue);
+		
 		d.setValue( sourceControlInstance.getValue());
-		window.alert(d.getValue);
+		window.alert(d);
 		targetControlInstance.setValue( d.getValue());
 		/* targetControlInstance.setValue( sourceControlInstance.getValue()); */
 	});
