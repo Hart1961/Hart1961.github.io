@@ -4,7 +4,7 @@ window.addEventListener('load', function(){
 	targetControlId = 111435706; /** ID OF Date to route results **/
 	var d = new Date();
 	
-	window.alert("Call 7");
+	window.alert("Call 9");
 	window.alert(d);
 
 	sourceControlInstance = loader.getEngine().getDocument().getElementById(sourceControlId);
@@ -13,7 +13,10 @@ window.addEventListener('load', function(){
 	sourceControlInstance.on('value-change', function(){
 		
 		window.alert( sourceControlInstance.getProperty('value.value'));
-		
+		d = sourceControlInstance.getProperty('value.value');
+		window.alert(d);
+		d.setDate(date.getDate() + 21);
+		window.alert(d);
 		targetControlInstance.setValue( d.getValue());
 		/* targetControlInstance.setValue( sourceControlInstance.getValue()); */
 	});
