@@ -4,7 +4,8 @@ window.addEventListener('load', function(){
 	targetControlId = 111435706; /** ID OF Date to route results **/
 	var d = new Date();
 	
-	window.alert("Call 4");
+	window.alert("Call 5");
+	window.alert(d);
 
 	sourceControlInstance = loader.getEngine().getDocument().getElementById(sourceControlId);
 	targetControlInstance = loader.getEngine().getDocument().getElementById(targetControlId);
