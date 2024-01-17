@@ -9,9 +9,9 @@ window.addEventListener('load', function(){
 	targetControlInstance = loader.getEngine().getDocument().getElementById(targetControlId);
 
 	sourceControlInstance.on('value-change', function(){
-		targetControlInstance.setValue( sourceControlInstance.getValue() );
+		targetControlInstance.setValue( sourceControlInstance.getValue() + 1 );
 	});
 
-	targetControlInstance.setValue( sourceControlInstance.getValue() );
+	targetControlInstance.setValue( sourceControlInstance.getValue() + 1 );
 });
 })();
