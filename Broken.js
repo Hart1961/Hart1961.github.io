@@ -10,17 +10,19 @@ window.addEventListener('load', function(){
 		targetControlInstance.setValue( sourceControlInstance.getValue() );
 	});
 	
+    sourceControlInstance2 = loader.getEngine().getDocument().getElementById(111115973);
+	targetControlInstance2 = loader.getEngine().getDocument().getElementById(111117248);
+
+	sourceControlInstance2.on('value-change', function(){
+		targetControlInstance2.setValue( sourceControlInstance2.getValue() );
+	});
+
 	targetControlInstance.setValue( sourceControlInstance.getValue() );
+	targetControlInstance2.setValue( sourceControlInstance2.getValue() );
+	
 	
 });
+
 })();
 
-function setPriority() {
-	var sourceControlId = 111090343, /** ID OF IMPACTED USERS FIELD **/
-	targetControlId = 111115973 	/** ID OF PRIORITY FIELD **/
-	var result1 = loader.engine.document.getElementById(sourceControlId).getProperty('value.value'); 
-	
-	loader.engine.document.getElementById(111115973).setValue(({"value": "High"})); 
-};
 
-window.onclick = roundResult;
