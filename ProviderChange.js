@@ -4,12 +4,13 @@ window.addEventListener('load', function(){
 	targetControlId = 111435706; /** ID OF Date to route results **/
 	var d = new Date();
 	
-	window.alert("Call 3");
+	window.alert("Call 4");
 
 	sourceControlInstance = loader.getEngine().getDocument().getElementById(sourceControlId);
 	targetControlInstance = loader.getEngine().getDocument().getElementById(targetControlId);
 
 	sourceControlInstance.on('value-change', function(){
+		window.alert(d.getValue);
 		d.setValue( sourceControlInstance.getValue());
 		window.alert(d.getValue);
 		targetControlInstance.setValue( d.getValue());
