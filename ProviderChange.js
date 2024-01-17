@@ -12,8 +12,8 @@ window.addEventListener('load', function(){
 
 	sourceControlInstance.on('value-change', function(){
 		
-		d.setValue( sourceControlInstance.getValue());
-		window.alert(d);
+		window.alert( sourceControlInstance.getValue());
+		
 		targetControlInstance.setValue( d.getValue());
 		/* targetControlInstance.setValue( sourceControlInstance.getValue()); */
 	});
