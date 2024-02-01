@@ -15,7 +15,7 @@ window.addEventListener('load', function(){
 		window.alert(sourceControlInstance.getProperty('value.value'));
 		n = sourceControlInstance.getProperty('value.value');
 		window.alert(n);
-		d.setDate('1-01-2024');
+		d = dateSourceControlInstance.getProperty('value.value');
 		window.alert(d);
 		window.alert(dateSourceControlInstance.getProperty('value.value'));
 		/* targetControlInstance.setValue( d.getValue());
