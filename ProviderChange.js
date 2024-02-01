@@ -4,6 +4,7 @@ window.addEventListener('load', function(){
 		dateSourceControlId = 110705755, /* ID OF Last Official day with ACP */
 		targetControlId = 111435706; /** ID OF Date to route results **/
 	var n = 0;
+	var s = "";
 	var d = new Date();
 	
 	sourceControlInstance = loader.getEngine().getDocument().getElementById(sourceControlId);
@@ -11,12 +12,12 @@ window.addEventListener('load', function(){
 	targetControlInstance = loader.getEngine().getDocument().getElementById(targetControlId);
 
 	sourceControlInstance.on('value-change', function(){
-		
+		window.alert("1");
 		window.alert(sourceControlInstance.getProperty('value.value'));
 		n = sourceControlInstance.getProperty('value.value');
 		window.alert(n);
-		d = dateSourceControlInstance.getProperty('value.value');
-		window.alert(d);
+		s = dateSourceControlInstance.getProperty('value.value');
+		window.alert(s);
 		window.alert(dateSourceControlInstance.getProperty('value.value'));
 		/* targetControlInstance.setValue( d.getValue());
 		/* targetControlInstance.setValue( sourceControlInstance.getValue()); */
