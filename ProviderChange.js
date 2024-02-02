@@ -12,14 +12,14 @@ window.addEventListener('load', function(){
 	targetControlInstance = loader.getEngine().getDocument().getElementById(targetControlId);
 
 	sourceControlInstance.on('value-change', function(){
-		window.alert("1");
-		window.alert(sourceControlInstance.getProperty('value.value'));
+		window.alert("2");
 		n = sourceControlInstance.getProperty('value.value');
 		window.alert(n);
 		s = dateSourceControlInstance.getProperty('value.value');
 		window.alert(s);
 		d = new Date(s);
 		window.alert(d);
+		window.alert("Now we add");
 		d.setDate(d.getDate() + n);
 		window.alert(d);
 		/* window.alert(dateSourceControlInstance.getProperty('value.value'));
