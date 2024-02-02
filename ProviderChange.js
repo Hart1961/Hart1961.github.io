@@ -3,8 +3,8 @@ window.addEventListener('load', function(){
 	var sourceControlId = 110705761, /* ID OF number of days for access */
 		dateSourceControlId = 110705755, /* ID OF Last Official day with ACP */
 		targetControlId = 111435706; /** ID OF Date to route results **/
-	var n = 0;
-	var s = "";
+	var n = 0; /* Will be our number of days for access */
+	var s = ""; /* Will be our new date to route results */
 	
 	
 	sourceControlInstance = loader.getEngine().getDocument().getElementById(sourceControlId);
@@ -18,12 +18,11 @@ window.addEventListener('load', function(){
 		s = dateSourceControlInstance.getProperty('value.value');
 		window.alert(s.valueOf());
 		d = new Date(s);
-		window.alert(d);
 		window.alert("Now we add");
-		d.setDate(d.getDate() + n + 1);
-		window.alert(d);
-		/* window.alert(dateSourceControlInstance.getProperty('value.value'));
-		/* targetControlInstance.setValue( d.getValue());
+		d.setDate(d.getDate() + n + 1); /* extra 1 to accomodate offset */
+		s = d.toISOString().split("T")[0];
+		window.alert(s); 
+		targetControlInstance.setValue(s));
 		/* targetControlInstance.setValue( sourceControlInstance.getValue()); */
 	});
 		/* targetControlInstance.setValue( d.getValue());
