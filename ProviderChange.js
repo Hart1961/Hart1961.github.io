@@ -13,7 +13,7 @@ window.addEventListener('load', function(){
 
 	sourceControlInstance.on('value-change', function(){
 		window.alert("3");
-		targetControlInstance.setValue("2024-04-01");
+		targetControlInstance.value = "2024-04-01";
 		n = sourceControlInstance.getProperty('value.value');
 		window.alert(n);
 		s = dateSourceControlInstance.getProperty('value.value');
