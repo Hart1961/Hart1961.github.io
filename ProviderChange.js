@@ -16,11 +16,11 @@ window.addEventListener('load', function(){
 		n = sourceControlInstance.getProperty('value.value');
 		window.alert(n);
 		s = dateSourceControlInstance.getProperty('value.value');
-		window.alert(s);
+		window.alert(s.valueOf());
 		d = new Date(s);
 		window.alert(d);
 		window.alert("Now we add");
-		d.setDate(d.getDate() + n);
+		d.setDate(d.getDate() + n + 1);
 		window.alert(d);
 		/* window.alert(dateSourceControlInstance.getProperty('value.value'));
 		/* targetControlInstance.setValue( d.getValue());
