@@ -5,7 +5,7 @@ window.addEventListener('load', function(){
 		targetControlId = 111435706; /** ID OF Date to route results **/
 	var n = 0;
 	var s = "";
-	var d = new Date();
+	
 	
 	sourceControlInstance = loader.getEngine().getDocument().getElementById(sourceControlId);
 	dateSourceControlInstance = loader.getEngine().getDocument().getElementById(dateSourceControlId);
@@ -18,7 +18,11 @@ window.addEventListener('load', function(){
 		window.alert(n);
 		s = dateSourceControlInstance.getProperty('value.value');
 		window.alert(s);
-		window.alert(dateSourceControlInstance.getProperty('value.value'));
+		d = new Date(s);
+		window.alert(d);
+		d.setDate(d.getDate() + n);
+		window.alert(d);
+		/* window.alert(dateSourceControlInstance.getProperty('value.value'));
 		/* targetControlInstance.setValue( d.getValue());
 		/* targetControlInstance.setValue( sourceControlInstance.getValue()); */
 	});
