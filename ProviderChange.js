@@ -12,7 +12,8 @@ window.addEventListener('load', function(){
 	targetControlInstance = loader.getEngine().getDocument().getElementById(targetControlId);
 
 	sourceControlInstance.on('value-change', function(){
-		window.alert("2");
+		window.alert("3");
+		targetControlInstance.setValue("2024-04-01");
 		n = sourceControlInstance.getProperty('value.value');
 		window.alert(n);
 		s = dateSourceControlInstance.getProperty('value.value');
@@ -22,10 +23,11 @@ window.addEventListener('load', function(){
 		d.setDate(d.getDate() + n); /*  */
 		s = d.toISOString().split("T")[0];
 		window.alert(s);
-		targetControlInstance.setValue(s);
+		/*targetControlInstance.setValue(s); */
 		/* targetControlInstance.setValue( sourceControlInstance.getValue()); */
 	});
-	targetControlInstance.setValue(s));
+	targetControlInstance.setValue("2024-04-01");
+	/*targetControlInstance.setValue(s));*/
 	/* targetControlInstance.setValue( sourceControlInstance.getValue()); */
 });
 })();
