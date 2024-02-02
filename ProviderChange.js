@@ -22,7 +22,7 @@ window.addEventListener('load', function(){
 		d.setDate(d.getDate() + n + 1); /* extra 1 to accomodate offset */
 		s = d.toISOString().split("T")[0];
 		window.alert(s); 
-		targetControlInstance.setValue(s));
+		targetControlInstance.setValue(s);
 		/* targetControlInstance.setValue( sourceControlInstance.getValue()); */
 	});
 		/* targetControlInstance.setValue( d.getValue());
