@@ -26,8 +26,8 @@ window.addEventListener('load', function(){
 		/*targetControlInstance.setValue(s); */
 		/* targetControlInstance.setValue( sourceControlInstance.getValue()); */
 	});
-	targetControlInstance.setValue("2024-04-01");
+	/*targetControlInstance.setValue("2024-04-01");*/
 	/*targetControlInstance.setValue(s));*/
-	/* targetControlInstance.setValue( sourceControlInstance.getValue()); */
+	 targetControlInstance.setValue( sourceControlInstance.getValue()); 
 });
 })();
