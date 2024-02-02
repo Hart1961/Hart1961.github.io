@@ -19,10 +19,10 @@ window.addEventListener('load', function(){
 		window.alert(s.valueOf());
 		d = new Date(s);
 		window.alert("Now we add");
-		d.setDate(d.getDate() + n + 1); /* extra 1 to accomodate offset */
+		d.setDate(d.getDate() + n); /*  */
 		s = d.toISOString().split("T")[0];
 		window.alert(s); 
-		targetControlInstance.setValue(s);
+		targetControlInstance.setValue(s.valueOf());
 		/* targetControlInstance.setValue( sourceControlInstance.getValue()); */
 	});
 		/* targetControlInstance.setValue( d.getValue());
