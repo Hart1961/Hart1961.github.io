@@ -25,7 +25,7 @@ window.addEventListener('load', function(){
 		targetControlInstance.setValue(s.valueOf());
 		/* targetControlInstance.setValue( sourceControlInstance.getValue()); */
 	});
-		/* targetControlInstance.setValue( d.getValue());
+	targetControlInstance.setValue(s.valueOf());
 	/* targetControlInstance.setValue( sourceControlInstance.getValue()); */
 });
 })();
