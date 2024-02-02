@@ -21,11 +21,11 @@ window.addEventListener('load', function(){
 		window.alert("Now we add");
 		d.setDate(d.getDate() + n); /*  */
 		s = d.toISOString().split("T")[0];
-		window.alert(s); 
-		targetControlInstance.setValue(s.valueOf());
+		window.alert(s);
+		targetControlInstance.setValue(s);
 		/* targetControlInstance.setValue( sourceControlInstance.getValue()); */
 	});
-	targetControlInstance.setValue(s.valueOf());
+	targetControlInstance.setValue(s));
 	/* targetControlInstance.setValue( sourceControlInstance.getValue()); */
 });
 })();
